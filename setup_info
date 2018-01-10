@@ -1,0 +1,16 @@
+To set up the environment on your computer, use the following instructions:
+
+Create the course python environment:
+
+We will use the conda command to create a standard python environment for this course. 
+
+Create a new environment by entering (or pasting) the following commands at a shell prompt (for example the Anaconda command prompt):
+
+conda create -n BioMEMS python=3.6 pip ipython jupyter numpy scipy pandas matplotlib seaborn scikit-learn hdf5 pytables
+Activate the new environment using (this should add "(BioMEMS)" to your command prompt, as a reminder of your current environment):
+
+conda activate MLS
+Add some additional packages from other sources (details here and here):
+
+conda install -c conda-forge libiconv jupyter_contrib_nbextensions
+conda install -c astropy lmfit emcee
